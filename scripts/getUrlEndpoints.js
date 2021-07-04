@@ -1,7 +1,7 @@
 const execSync = require('child_process').execSync
-const readline = require('readline-sync')
 
-const email = readline.question('AWS profile email? ')
+const args = process.argv
+const email = args[2]
 const command = `aws ${email? `--profile ${email}` : ''} --region us-east-1 apigateway get-rest-apis`
 const res = execSync(command)
 const json = JSON.parse(res)
