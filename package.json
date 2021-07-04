@@ -16,7 +16,8 @@
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "prettier": "prettier --write \"{,!(node_modules)/**/}*.js\"",
-    "getUrlEndpoints": "node scripts/getUrlEndpoints.js"
+    "getUrlEndpoints": "node scripts/getUrlEndpoints.js",
+    "loadUrlEndpointsManually": "node scripts/loadUrlEndpointsManually.js"
   },
   "eslintConfig": {
     "extends": [
